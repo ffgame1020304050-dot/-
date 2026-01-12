@@ -1,0 +1,877 @@
+/* বেসিক স্টাইল */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+body {
+    background-color: #0f1419;
+    color: #e8e8e8;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* হেডার */
+header {
+    background: linear-gradient(135deg, #ff6b00 0%, #ff3d00 100%);
+    padding: 15px 0;
+    box-shadow: 0 4px 12px rgba(255, 107, 0, 0.3);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+}
+
+.contact-info {
+    text-align: right;
+}
+
+.contact-info p {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    font-size: 15px;
+    color: white;
+}
+
+/* হিরো সেকশন */
+.hero {
+    background: linear-gradient(rgba(15, 20, 25, 0.9), rgba(15, 20, 25, 0.9)), 
+                url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #ff6b00;
+}
+
+.hero-content p {
+    font-size: 20px;
+    color: #aaa;
+    margin-bottom: 30px;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    background: rgba(255, 107, 0, 0.1);
+    border: 1px solid rgba(255, 107, 0, 0.3);
+    border-radius: 10px;
+    padding: 20px 30px;
+    min-width: 150px;
+}
+
+.stat-item h3 {
+    font-size: 36px;
+    color: #ff6b00;
+    margin-bottom: 5px;
+}
+
+.stat-item p {
+    font-size: 16px;
+    color: #ccc;
+}
+
+/* পেমেন্ট তথ্য */
+.payment-info {
+    padding: 40px 0;
+}
+
+.payment-box {
+    background: linear-gradient(135deg, #1a2332 0%, #0f1419 100%);
+    border-radius: 15px;
+    padding: 30px;
+    border: 1px solid rgba(255, 107, 0, 0.2);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.payment-box h3 {
+    color: #ff6b00;
+    font-size: 24px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.payment-methods {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.method {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    min-width: 220px;
+    transition: transform 0.3s;
+}
+
+.method:hover {
+    transform: translateY(-5px);
+}
+
+.method i {
+    font-size: 40px;
+    color: #ff6b00;
+    margin-bottom: 15px;
+}
+
+.method h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.method p {
+    color: #aaa;
+    margin-bottom: 5px;
+}
+
+.method-note {
+    color: #4CAF50 !important;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.payment-instructions {
+    background: rgba(0, 100, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 4px solid #2196F3;
+}
+
+.payment-instructions h4 {
+    color: #2196F3;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.payment-instructions ol {
+    margin-left: 20px;
+}
+
+.payment-instructions li {
+    margin-bottom: 8px;
+    color: #ccc;
+}
+
+.note {
+    background: rgba(255, 107, 0, 0.1);
+    border-left: 4px solid #ff6b00;
+    padding: 12px 15px;
+    margin-top: 20px;
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* প্যাকেজ সেকশন */
+.packages {
+    padding: 40px 0;
+}
+
+.section-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #ff6b00;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 2px solid rgba(255, 107, 0, 0.3);
+    padding-bottom: 10px;
+}
+
+.package-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.package-card {
+    background: linear-gradient(135deg, #1a2332 0%, #0f1419 100%);
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    border: 1px solid rgba(255, 107, 0, 0.2);
+    transition: all 0.3s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.package-card:hover {
+    border-color: #ff6b00;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 107, 0, 0.2);
+}
+
+.package-card.selected {
+    border-color: #ff6b00;
+    background: rgba(255, 107, 0, 0.1);
+}
+
+.package-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.package-card .diamond-icon {
+    color: #4fc3f7;
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.package-card .price {
+    font-size: 26px;
+    font-weight: 700;
+    color: #ff6b00;
+    margin: 15px 0;
+}
+
+.package-card .original-price {
+    color: #aaa;
+    text-decoration: line-through;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.package-card .btn-select {
+    background: linear-gradient(to right, #ff6b00, #ff3d00);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.package-card .btn-select:hover {
+    background: linear-gradient(to right, #ff3d00, #ff6b00);
+}
+
+/* অর্ডার ফর্ম */
+.order-form {
+    padding: 40px 0;
+    background: rgba(255, 107, 0, 0.05);
+}
+
+.order-form .container {
+    max-width: 800px;
+}
+
+form {
+    background: linear-gradient(135deg, #1a2332 0%, #0f1419 100%);
+    border-radius: 15px;
+    padding: 40px;
+    border: 1px solid rgba(255, 107, 0, 0.2);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 14px;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 107, 0, 0.3);
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #ff6b00;
+    box-shadow: 0 0 0 2px rgba(255, 107, 0, 0.2);
+}
+
+.form-hint {
+    font-size: 13px;
+    color: #888;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+.verification-note {
+    color: #4CAF50;
+    background: rgba(76, 175, 80, 0.1);
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.price-display {
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
+    background: rgba(255, 107, 0, 0.1);
+    border-radius: 8px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+#selected-price {
+    font-weight: 700;
+    color: #ff6b00;
+    font-size: 24px;
+}
+
+.submit-btn {
+    background: linear-gradient(to right, #ff6b00, #ff3d00);
+    color: white;
+    border: none;
+    padding: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 18px;
+    transition: all 0.3s;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.submit-btn:hover {
+    background: linear-gradient(to right, #ff3d00, #ff6b00);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(255, 107, 0, 0.3);
+}
+
+.submit-btn:disabled {
+    background: #666;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.form-note {
+    margin-top: 25px;
+    text-align: center;
+    padding: 15px;
+    background: rgba(0, 150, 0, 0.1);
+    border-radius: 8px;
+    border-left: 4px solid #4CAF50;
+}
+
+.form-note p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #4CAF50;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* পেমেন্ট ভেরিফিকেশন স্ট্যাটাস */
+.verification-status {
+    padding: 40px 0;
+    background: rgba(0, 100, 255, 0.05);
+}
+
+.status-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.status-card {
+    background: linear-gradient(135deg, #1a2332 0%, #0f1419 100%);
+    border-radius: 15px;
+    padding: 40px;
+    text-align: center;
+    border: 1px solid rgba(33, 150, 243, 0.3);
+    box-shadow: 0 8px 24px rgba(0, 100, 255, 0.2);
+}
+
+.status-icon {
+    font-size: 60px;
+    color: #2196F3;
+    margin-bottom: 20px;
+}
+
+.status-card h3 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.status-card p {
+    color: #aaa;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.progress-bar {
+    height: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: linear-gradient(to right, #2196F3, #4CAF50);
+    width: 0%;
+    transition: width 1s ease;
+    border-radius: 5px;
+}
+
+.status-details {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.status-details h4 {
+    color: #2196F3;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.status-details ul {
+    list-style: none;
+}
+
+.status-details li {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+}
+
+.status-details li:last-child {
+    border-bottom: none;
+}
+
+.status-label {
+    color: #aaa;
+}
+
+.status-value {
+    color: #fff;
+    font-weight: 600;
+}
+
+/* অর্ডার লিস্ট */
+.order-list {
+    padding: 40px 0;
+}
+
+.order-filters {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 107, 0, 0.3);
+    color: #aaa;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.filter-btn:hover {
+    background: rgba(255, 107, 0, 0.2);
+    color: #fff;
+}
+
+.filter-btn.active {
+    background: linear-gradient(to right, #ff6b00, #ff3d00);
+    color: white;
+    border-color: #ff6b00;
+}
+
+.order-table-container {
+    overflow-x: auto;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 107, 0, 0.2);
+}
+
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: linear-gradient(135deg, #1a2332 0%, #0f1419 100%);
+}
+
+.order-table th {
+    background: rgba(255, 107, 0, 0.2);
+    padding: 18px 15px;
+    text-align: left;
+    color: #ff6b00;
+    font-weight: 700;
+    border-bottom: 1px solid rgba(255, 107, 0, 0.3);
+}
+
+.order-table td {
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    color: #ddd;
+}
+
+.order-table tr:hover {
+    background: rgba(255, 107, 0, 0.05);
+}
+
+.status-pending {
+    color: #ff9800;
+    font-weight: 600;
+}
+
+.status-confirmed {
+    color: #4CAF50;
+    font-weight: 600;
+}
+
+.status-failed {
+    color: #f44336;
+    font-weight: 600;
+}
+
+.payment-method {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
+    background: rgba(33, 150, 243, 0.1);
+    border-radius: 4px;
+    color: #2196F3;
+}
+
+/* ফুটার */
+footer {
+    background: linear-gradient(135deg, #0a0e14 0%, #070a0d 100%);
+    padding: 40px 0 20px;
+    border-top: 1px solid rgba(255, 107, 0, 0.2);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-logo h3 {
+    font-size: 24px;
+    color: #ff6b00;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo p {
+    color: #aaa;
+}
+
+.security-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(76, 175, 80, 0.1);
+    color: #4CAF50;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.footer-contact h4 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.footer-contact p {
+    color: #aaa;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-developer {
+    text-align: right;
+}
+
+.footer-developer p {
+    color: #aaa;
+    margin-bottom: 5px;
+}
+
+.footer-developer span {
+    color: #ff6b00;
+    font-weight: 600;
+}
+
+.copyright {
+    font-size: 14px;
+    color: #777;
+    margin-top: 20px;
+}
+
+.tech-info {
+    font-size: 12px;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* মডেল */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: linear-gradient(135deg, #1a2332 0%, #0f1419 100%);
+    border-radius: 15px;
+    width: 90%;
+    max-width: 500px;
+    border: 1px solid rgba(255, 107, 0, 0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.modal-header {
+    background: linear-gradient(to right, #ff6b00, #ff3d00);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h3 {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.close-modal {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.modal-body {
+    padding: 30px;
+    text-align: center;
+}
+
+.success-icon {
+    font-size: 60px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.modal-body h4 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.modal-body p {
+    color: #aaa;
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+.order-summary {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.order-summary h5 {
+    color: #ff6b00;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.order-summary div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.order-summary div:last-child {
+    border-bottom: none;
+}
+
+.modal-btn {
+    background: linear-gradient(to right, #ff6b00, #ff3d00);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all 0.3s;
+    width: 100%;
+}
+
+.modal-btn:hover {
+    background: linear-gradient(to right, #ff3d00, #ff6b00);
+}
+
+/* রেস্পন্সিভ ডিজাইন */
+@media (max-width: 768px) {
+    .hero-content h2 {
+        font-size: 28px;
+    }
+    
+    .hero-content p {
+        font-size: 18px;
+    }
+    
+    .stats {
+        gap: 20px;
+    }
+    
+    .stat-item {
+        min-width: 120px;
+        padding: 15px 20px;
+    }
+    
+    .stat-item h3 {
+        font-size: 28px;
+    }
+    
+    .payment-methods {
+        gap: 20px;
+    }
+    
+    .method {
+        min-width: 150px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-developer {
+        text-align: center;
+    }
+    
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .contact-info {
+        text-align: center;
+    }
+    
+    .contact-info p {
+        justify-content: center;
+    }
+    
+    .status-card {
+        padding: 25px;
+    }
+    
+    .order-table th, .order-table td {
+        padding: 10px 8px;
+        font-size: 14px;
+    }
+}

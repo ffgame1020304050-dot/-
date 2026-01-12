@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>আমি কিনবো - Free Fire Diamond টপ-আপ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- হেডার সেকশন -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <h1><i class="fas fa-fire"></i> আমি কিনবো</h1>
+                    <p>Free Fire Diamond Top-Up</p>
+                </div>
+                <div class="contact-info">
+                    <p><i class="fas fa-phone"></i> যোগাযোগ: 01748-320647</p>
+                    <p><i class="fas fa-whatsapp"></i> WhatsApp: 01748-320647</p>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- হিরো সেকশন -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Free Fire Diamond টপ-আপ করুন সহজেই</h2>
+                <p>সর্বনিম্ন দামে, সর্বোচ্চ সেবা</p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <h3 id="total-orders">0</h3>
+                        <p>মোট অর্ডার</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 id="confirmed-orders">0</h3>
+                        <p>কনফার্মড অর্ডার</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 id="pending-orders">0</h3>
+                        <p>পেন্ডিং অর্ডার</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- পেমেন্ট তথ্য -->
+    <section class="payment-info">
+        <div class="container">
+            <div class="payment-box">
+                <h3><i class="fas fa-money-bill-wave"></i> পেমেন্ট তথ্য</h3>
+                <div class="payment-methods">
+                    <div class="method">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h4>বিকাশ</h4>
+                        <p>নম্বর: <strong>01540651159</strong></p>
+                        <p class="method-note">Personal</p>
+                    </div>
+                    <div class="method">
+                        <i class="fas fa-wallet"></i>
+                        <h4>নগদ (রকেট)</h4>
+                        <p>নম্বর: <strong>01540651159</strong></p>
+                        <p class="method-note">Personal</p>
+                    </div>
+                </div>
+                <div class="payment-instructions">
+                    <h4><i class="fas fa-info-circle"></i> পেমেন্ট নির্দেশনা:</h4>
+                    <ol>
+                        <li>পছন্দের প্যাকেজ সিলেক্ট করুন</li>
+                        <li>বিকাশ/নগদে সঠিক অ্যামাউন্ট সেন্ড মানি করুন</li>
+                        <li>ট্রানজেকশন আইডি সঠিকভাবে দিন</li>
+                        <li>অর্ডার ২-৫ মিনিটে স্বয়ংক্রিয়ভাবে কনফার্ম হবে</li>
+                    </ol>
+                </div>
+                <p class="note"><i class="fas fa-exclamation-circle"></i> ভুল ট্রানজেকশন আইডি দিলে অর্ডার বাতিল হবে</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ডায়মন্ড প্যাকেজ -->
+    <section class="packages" id="diamond">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-gem"></i> ডায়মন্ড প্যাকেজ</h2>
+            <div class="package-grid" id="diamond-packages"></div>
+        </div>
+    </section>
+
+    <!-- উইকলি/মান্থলি প্যাকেজ -->
+    <section class="packages" id="weekly">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-calendar-week"></i> উইকলি/মান্থলি প্যাকেজ</h2>
+            <div class="package-grid" id="weekly-packages"></div>
+        </div>
+    </section>
+
+    <!-- এয়ারড্রপ প্যাকেজ -->
+    <section class="packages" id="airdrop">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-parachute-box"></i> এয়ারড্রপ প্যাকেজ</h2>
+            <div class="package-grid" id="airdrop-packages"></div>
+        </div>
+    </section>
+
+    <!-- ইভো অ্যাক্সেস প্যাকেজ -->
+    <section class="packages" id="evo">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-crown"></i> ইভো অ্যাক্সেস প্যাকেজ</h2>
+            <div class="package-grid" id="evo-packages"></div>
+        </div>
+    </section>
+
+    <!-- অর্ডার ফর্ম -->
+    <section class="order-form">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-shopping-cart"></i> অর্ডার করুন</h2>
+            <form id="orderForm">
+                <div class="form-group">
+                    <label for="package"><i class="fas fa-box-open"></i> প্যাকেজ নির্বাচন করুন</label>
+                    <select id="package" required>
+                        <option value="">প্যাকেজ সিলেক্ট করুন</option>
+                        <!-- প্যাকেজ অপশনগুলি JavaScript দিয়ে যোগ করা হবে -->
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="uid"><i class="fas fa-id-card"></i> Free Fire UID (10-12 ডিজিট)</label>
+                    <input type="text" id="uid" placeholder="উদাহরণ: 1234567890" required minlength="9" maxlength="12">
+                    <div class="form-hint">আপনার Free Fire অ্যাকাউন্টের UID</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone"><i class="fas fa-phone"></i> আপনার ফোন নম্বর</label>
+                    <input type="tel" id="phone" placeholder="উদাহরণ: 017XXXXXXXX" required pattern="01[3-9]\d{8}">
+                    <div class="form-hint">বাংলাদেশী মোবাইল নম্বর (11 ডিজিট)</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="payment-method"><i class="fas fa-credit-card"></i> পেমেন্ট মেথড</label>
+                    <select id="payment-method" required>
+                        <option value="">পেমেন্ট মেথড সিলেক্ট করুন</option>
+                        <option value="bkash">বিকাশ</option>
+                        <option value="nagad">নগদ (রকেট)</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="transaction"><i class="fas fa-receipt"></i> ট্রানজেকশন আইডি (TrxID)</label>
+                    <input type="text" id="transaction" placeholder="উদাহরণ: 8X7Y6Z5A" required>
+                    <div class="form-hint">বিকাশ/নগদ এ পেমেন্টের পর পাওয়া TrxID</div>
+                </div>
+                
+                <div class="form-group">
+                    <p class="price-display">মূল্য: <span id="selected-price">0</span> টাকা</p>
+                    <p class="verification-note" id="verification-note" style="display: none;">
+                        <i class="fas fa-shield-alt"></i> এই ট্রানজেকশন স্বয়ংক্রিয়ভাবে ভেরিফাই হবে
+                    </p>
+                </div>
+                
+                <button type="submit" class="submit-btn" id="submit-btn">
+                    <i class="fas fa-paper-plane"></i> অর্ডার কনফার্ম করুন
+                </button>
+                
+                <div class="form-note">
+                    <p><i class="fas fa-clock"></i> কনফার্ম হতে ২-৫ মিনিট সময় লাগবে</p>
+                    <p><i class="fas fa-check-circle"></i> পেমেন্ট ভেরিফিকেশনের পর অটো কনফার্ম</p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- পেমেন্ট ভেরিফিকেশন স্ট্যাটাস -->
+    <section class="verification-status" id="verification-section" style="display: none;">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-search-dollar"></i> পেমেন্ট ভেরিফিকেশন</h2>
+            <div class="status-container">
+                <div class="status-card">
+                    <div class="status-icon">
+                        <i class="fas fa-sync-alt fa-spin"></i>
+                    </div>
+                    <h3 id="verification-title">পেমেন্ট চেক করা হচ্ছে...</h3>
+                    <p id="verification-message">আপনার ট্রানজেকশন ভেরিফাই করা হচ্ছে। দয়া করে অপেক্ষা করুন...</p>
+                    <div class="progress-bar">
+                        <div class="progress" id="verification-progress"></div>
+                    </div>
+                    <div class="status-details" id="verification-details">
+                        <!-- ভেরিফিকেশন ডিটেইলস এখানে শো হবে -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- অর্ডার লিস্ট -->
+    <section class="order-list">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-list-alt"></i> সাম্প্রতিক অর্ডার</h2>
+            <div class="order-filters">
+                <button class="filter-btn active" data-filter="all">সকল</button>
+                <button class="filter-btn" data-filter="pending">পেন্ডিং</button>
+                <button class="filter-btn" data-filter="confirmed">কনফার্মড</button>
+                <button class="filter-btn" data-filter="failed">ব্যর্থ</button>
+            </div>
+            <div class="order-table-container">
+                <table class="order-table">
+                    <thead>
+                        <tr>
+                            <th>অর্ডার আইডি</th>
+                            <th>প্যাকেজ</th>
+                            <th>UID</th>
+                            <th>স্ট্যাটাস</th>
+                            <th>পেমেন্ট</th>
+                            <th>সময়</th>
+                        </tr>
+                    </thead>
+                    <tbody id="orders-table-body">
+                        <!-- অর্ডারগুলি JavaScript দিয়ে যোগ করা হবে -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- ফুটার -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3><i class="fas fa-fire"></i> আমি কিনবো</h3>
+                    <p>Free Fire Diamond Top-Up Service</p>
+                    <p class="security-badge">
+                        <i class="fas fa-shield-alt"></i> সুরক্ষিত পেমেন্ট ভেরিফিকেশন
+                    </p>
+                </div>
+                <div class="footer-contact">
+                    <h4>যোগাযোগ</h4>
+                    <p><i class="fas fa-phone"></i> 01748-320647</p>
+                    <p><i class="fas fa-whatsapp"></i> WhatsApp: 01748-320647</p>
+                    <p><i class="fas fa-envelope"></i> support@amikinbo.com</p>
+                </div>
+                <div class="footer-developer">
+                    <p>Developer: <span>RIPON HASAN</span></p>
+                    <p class="copyright">© 2026 তৈরি হয়েছে। সর্বস্বত্ব সংরক্ষিত।</p>
+                    <p class="tech-info">পেমেন্ট ভেরিফিকেশন সিস্টেম v2.0</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- মডেল পপআপ -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-check-circle"></i> অর্ডার সফল!</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="success-icon">
+                    <i class="fas fa-check"></i>
+                </div>
+                <h4 id="modal-order-id"></h4>
+                <p id="modal-message"></p>
+                <div class="order-summary" id="modal-summary"></div>
+                <button class="modal-btn" id="modal-ok-btn">ঠিক আছে</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
